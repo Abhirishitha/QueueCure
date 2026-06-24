@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/queue";
+  "https://your-render-backend.onrender.com/api/queue";
 
 export const getQueue =
   async () => {

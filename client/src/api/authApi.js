@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://localhost:5000/api/auth";
+  "https://your-render-backend.onrender.com/api/auth";
 
 export const registerUser =
   async (userData) => {
@@ -31,7 +31,7 @@ export const loginUser =
 
     const response =
       await axios.post(
-        "http://localhost:5000/api/auth/forgot-password",
+        "https://your-render-backend.onrender.com/api/auth/forgot-password",
         { email }
       );
 
@@ -46,7 +46,7 @@ export const resetPassword =
 
     const response =
       await axios.put(
-        `http://localhost:5000/api/auth/reset-password/${token}`,
+        `https://your-render-backend.onrender.com/api/auth/reset-password/${token}`,
         { password }
       );
 
